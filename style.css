@@ -12,7 +12,7 @@ body {
   display: flex;
   position: fixed;
 }
-.text {
+.sidebar .text {
   color: #fff;
   font-weight: 600;
   padding: 20px 60px;
@@ -50,13 +50,13 @@ body {
   font-size: 20px;
   width: 100%;
   height: 7vh;
-  align-items: center;
-  align-content: center;
+  /* text-align: center; */
   /* height: 100%; */
   /* justify-content: center; */
 }
 .header .text {
-  margin: 1px auto;
+  margin-top: 10px;
+  margin-left: 15px;
 }
 /* ----------dashboard styling------------- */
 
@@ -70,13 +70,27 @@ body {
   flex-wrap: wrap;
   background-color: #fff;
   margin: 10px;
-  padding: 20px;
+  padding: 40px 60px;
   height: 25%;
   border-radius: 10px;
 }
 .container .card .content {
   display: flex;
+  /* flex-basis: -20px; */
+  /* justify-content: space-between; */
+}
+.card .info {
+  /* justify-content: space-between; */
 }
 .card .info .text {
   color: black;
+}
+.card .content .fa-solid {
+  font-size: 60px;
+}
+.card .info .details {
+  font-size: 20px;
+  font-weight: 600;
+}
+.card .info .text {
 }
