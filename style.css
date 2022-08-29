@@ -48,11 +48,24 @@ body {
   position: fixed;
   color: #fff;
   font-size: 20px;
-  width: 100%;
+  width: 87%;
   height: 7vh;
   /* text-align: center; */
   /* height: 100%; */
   /* justify-content: center; */
+}
+.header .content {
+  display: flex;
+  justify-content: space-between;
+}
+.header .account {
+  display: flex;
+  padding: 0 10px;
+}
+.header .fa-solid {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 18px;
 }
 .header .text {
   margin-top: 10px;
@@ -70,14 +83,25 @@ body {
   flex-wrap: wrap;
   background-color: #fff;
   margin: 10px;
-  padding: 40px 60px;
+  padding: 40px 20px;
   height: 25%;
   border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(163, 177, 198, 0.5),
+    -5px -5px 10px rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+}
+.container .card:hover {
+  box-shadow: 5px 5px 10px rgba(163, 177, 198, 0.5),
+    -5px -5px 10px rgba(255, 255, 255, 0.4);
+  filter: brightness(1.05);
+  transform: scale(1.2);
+  background: rgb(48, 133, 231);
 }
 .container .card .content {
   display: flex;
   /* flex-basis: -20px; */
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 .card .info {
   /* justify-content: space-between; */
@@ -86,11 +110,14 @@ body {
   color: black;
 }
 .card .content .fa-solid {
-  font-size: 60px;
+  font-size: 75px;
 }
 .card .info .details {
+  margin-left: 10px;
   font-size: 20px;
   font-weight: 600;
 }
 .card .info .text {
+  margin-top: 10px;
+  margin-left: 25px;
 }
