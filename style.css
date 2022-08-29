@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+body {
+  /* background: #dfe9f5; */
+}
+.wrapper {
+  display: flex;
+  position: relative;
+}
+.text {
+  color: #fff;
+  font-weight: 600;
+  padding: 20px 60px;
+}
+.wrapper .sidebar {
+  position: fixed;
+  height: 100%;
+  width: 200px;
+  /* c:hidden; */
+  background-color: rgb(24, 157, 245);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .sidebar ul li {
+  list-style: none;
+  margin-top: 30px;
+}
+.wrapper .sidebar ul li a {
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 550;
+}
+.logout{
+    position:absolute;
+    bottom:0;
+}
