@@ -20,7 +20,7 @@ body {
 .wrapper .sidebar {
   /* position: fixed; */
   height: 100vh;
-  min-width:  70px;
+  min-width: 70px;
   width: 3vw;
   max-width: 18vw;
   transition: width 1s ease;
@@ -45,13 +45,22 @@ body {
 }
 
 /* --------------------header------------ */
+/* .main {
+  width: 100%;
+} */
 .header {
   background-color: rgb(6, 66, 177);
-  position: fixed;
+  position: absolute;
+  z-index: -2;
   color: #fff;
   font-size: 20px;
-  width: 87%;
+  width: 100%;
   height: 7vh;
+  top: 0;
+  right: 0;
+  float: right;
+  margin-right: 0;
+  min-width: 82ew;
   /* text-align: center; */
   /* height: 100%; */
   /* justify-content: center; */
@@ -71,7 +80,7 @@ body {
 }
 .header .text {
   margin-top: 10px;
-  margin-left: 15px;
+  /* margin-left: px; */
 }
 /* ----------dashboard styling------------- */
 
@@ -99,8 +108,8 @@ body {
   /* flex-basis: -20px; */
   justify-content: space-between;
 }
-/*.card, .info {/* justify-content: space-between; */*/
-.card .info .text {
+/*.card, .info {/* justify-content: space-between; */
+*/ .card .info .text {
   text-align: left;
   color: black;
 }
@@ -116,7 +125,6 @@ body {
   margin-top: 1vw;
   margin-left: 25px;
 }
-
 
 /*--------------Naveen's Touch------------------*/
 .container {
@@ -140,7 +148,7 @@ body {
 .appoint {
   display: none;
 }
-#li1{
+#li1 {
   line-height: 30px;
   text-align: right;
   height: 30px;
@@ -149,7 +157,7 @@ body {
   background-color: transparent;
   border: none;
 }
-#ckl{
+#ckl {
   display: none;
 }
 #ck {
@@ -160,22 +168,22 @@ body {
   float: right;
   display: none;
 }
-.menu ul li a{
- display: inline-flex;
+.menu ul li a {
+  display: inline-flex;
 }
-.menu ul li{
+.menu ul li {
   height: 10vh;
   border-bottom: 1px solid black;
 }
-.menu ul li:hover{
+.menu ul li:hover {
   height: 11vh;
   background-color: rgb(6, 66, 177);
 }
-.menu ul li:last-child{
+.menu ul li:last-child {
   background-color: transparent;
   border: none;
 }
-.menu ul li a i{
+.menu ul li a i {
   text-align: center;
   width: 50px;
   padding: 10px;
@@ -183,16 +191,16 @@ body {
 .menu ul li a i:hover {
   font-size: 25px;
 }
-.menu ul li a p{
+.menu ul li a p {
   line-height: 45px;
   display: none;
   opacity: 0;
   transition: opacity 2s ease;
 }
-.sidebar:hover{
+.sidebar:hover {
   width: 80%;
 }
-.ext{
+.ext {
   width: 80%;
 }
 /*--------------Naveen's Touch End------------------*/
