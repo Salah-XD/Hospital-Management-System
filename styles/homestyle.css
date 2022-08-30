@@ -99,9 +99,7 @@ body {
   /* flex-basis: -20px; */
   justify-content: space-between;
 }
-.card .info {
-  /* justify-content: space-between; */
-}
+/*.card, .info {/* justify-content: space-between; */*/
 .card .info .text {
   text-align: left;
   color: black;
@@ -135,7 +133,6 @@ body {
 }
 .container .card {
   margin: 0.5vw;
-  display: inline-block;
   float: right;
   min-width: 200px;
   width: 18vw;
