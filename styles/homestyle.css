@@ -20,15 +20,17 @@ body {
 .wrapper .sidebar {
   /* position: fixed; */
   height: 100vh;
-  width: 200px;
+  min-width:  70px;
+  width: 3vw;
+  max-width: 18vw;
+  transition: width 1s ease;
+  border-right: solid rgb(7, 132, 216);
   /* c:hidden; */
   background-color: rgb(24, 157, 245);
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
-
 .wrapper .sidebar ul li {
   list-style: none;
-  margin-top: 30px;
 }
 .wrapper .sidebar ul li a {
   text-decoration: none;
@@ -73,18 +75,12 @@ body {
 }
 /* ----------dashboard styling------------- */
 
-.container {
-  display: flex;
-  margin: 70px 10px;
-  padding: 25px;
-}
 .container .card {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   background-color: #fff;
   margin: 10px;
-  padding: 40px 20px;
-  height: 25%;
+  padding: 3vw;
+  height: 10vw;
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 5px 5px 10px rgba(163, 177, 198, 0.5),
@@ -103,21 +99,100 @@ body {
   /* flex-basis: -20px; */
   justify-content: space-between;
 }
-.card .info {
-  /* justify-content: space-between; */
-}
+/*.card, .info {/* justify-content: space-between; */*/
 .card .info .text {
+  text-align: left;
   color: black;
 }
 .card .content .fa-solid {
-  font-size: 75px;
+  font-size: 50px; /*---Naveen's 75 - 50 -----*/
 }
 .card .info .details {
-  margin-left: 10px;
+  margin-left: 2vw;
   font-size: 20px;
   font-weight: 600;
 }
 .card .info .text {
-  margin-top: 10px;
+  margin-top: 1vw;
   margin-left: 25px;
 }
+
+
+/*--------------Naveen's Touch------------------*/
+.container {
+  display: inline-block;
+  margin: 70px 10px;
+  padding: 2em;
+  padding-left: auto;
+  padding-right: auto;
+  position: center;
+  width: 100%;
+  min-width: 800px;
+  min-height: 50vh;
+  max-height: 80vh;
+}
+.container .card {
+  margin: 0.5vw;
+  float: right;
+  min-width: 200px;
+  width: 18vw;
+}
+.appoint {
+  display: none;
+}
+#li1{
+  line-height: 30px;
+  text-align: right;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+#ckl{
+  display: none;
+}
+#ck {
+  cursor: pointer;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  float: right;
+  display: none;
+}
+.menu ul li a{
+ display: inline-flex;
+}
+.menu ul li{
+  height: 10vh;
+  border-bottom: 1px solid black;
+}
+.menu ul li:hover{
+  height: 11vh;
+  background-color: rgb(6, 66, 177);
+}
+.menu ul li:last-child{
+  background-color: transparent;
+  border: none;
+}
+.menu ul li a i{
+  text-align: center;
+  width: 50px;
+  padding: 10px;
+}
+.menu ul li a i:hover {
+  font-size: 25px;
+}
+.menu ul li a p{
+  line-height: 45px;
+  display: none;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+.sidebar:hover{
+  width: 80%;
+}
+.ext{
+  width: 80%;
+}
+/*--------------Naveen's Touch End------------------*/

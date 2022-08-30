@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!----<meta http-equiv="refresh" content="2">---->
     <title>Hospital Management System</title>
     <link rel="stylesheet" href="styles/homestyle.css" />
     <script
@@ -12,33 +13,34 @@
     ></script>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="sidebar">
+    <div id="wrapper" class="wrapper">
+      <div onmouseover="ext(1)" onmouseout="ext(0)" id="sidebar"" class="sidebar">
         <h2 class="text">HMS</h2>
         <div class="menu">
           <ul>
+            <li id="li1">
+              <input id="ck" type="checkbox" onchange="chs(this)"><p id="ckl">lock</p>
+            </li>
             <li>
               <a href="#" class="dash"
-                ><i class="fa-solid fa-window-maximize"></i> DashBoard</a
-              >
+                ><i class="fa-solid fa-window-maximize"></i><p class="sbt">DashBoard<p></a>
             </li>
             <li>
               <a href="#"
-                ><i class="fa-solid fa-suitcase-medical"></i> Appointments</a
-              >
+                ><i class="fa-solid fa-suitcase-medical"></i><p class="sbt">Appointments</p></a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-chart-bar"></i> Statistics</a>
+              <a href="#"><i class="fa-solid fa-chart-bar"></i><p class="sbt">Statistics</p></a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-cart-flatbed"></i> Inventory</a>
+              <a href="#"><i class="fa-solid fa-cart-flatbed"></i><p class="sbt">Inventory</p></a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-user-group"></i> Accounts</a>
+              <a href="#"><i class="fa-solid fa-user-group"></i><p class="sbt">Accounts</p></a>
             </li>
             <li>
               <a class="logout" href="#"
-                ><i class="fa-solid fa-right-from-bracket"></i> Log-Out</a
+                ><i class="fa-solid fa-right-from-bracket"></i><p class="sbt">Log-Out</p></a
               >
             </li>
           </ul>
@@ -57,6 +59,7 @@
             </div>
           </div>
         </div>
+        <!---------Cards  list----------->
         <div class="container">
           <div class="card">
             <div class="content">
@@ -71,8 +74,8 @@
             <div class="content">
               <i class="fa-solid fa-user-doctor"></i>
               <div class="info">
-                <div class="details">Number of Doctors</div>
-                <div class="text">14 available</div>
+                <div class="details">Doctors</div>
+                <div class="text">14 On Hospital</div>
               </div>
             </div>
           </div>
@@ -80,7 +83,7 @@
             <div class="content">
               <i class="fa-solid fa-bed"></i>
               <div class="info">
-                <div class="details">Number of Patient</div>
+                <div class="details">Patient</div>
                 <div class="text">14 available</div>
               </div>
             </div>
@@ -89,7 +92,7 @@
             <div class="content">
               <i class="fa-solid fa-user-nurse"></i>
               <div class="info">
-                <div class="details">Number of Employees</div>
+                <div class="details">Nurses</div>
                 <div class="text">14 available</div>
               </div>
             </div>
@@ -98,7 +101,7 @@
             <div class="content">
               <i class="fa-solid fa-user-nurse"></i>
               <div class="info">
-                <div class="details">Number of Employees</div>
+                <div class="details">Oxygen</div>
                 <div class="text">14 available</div>
               </div>
             </div>
@@ -107,7 +110,7 @@
             <div class="content">
               <i class="fa-solid fa-user-nurse"></i>
               <div class="info">
-                <div class="details">Number of Employees</div>
+                <div class="details">Admit</div>
                 <div class="text">14 available</div>
               </div>
             </div>
@@ -116,14 +119,22 @@
             <div class="content">
               <i class="fa-solid fa-user-nurse"></i>
               <div class="info">
-                <div class="details">Number of Employees</div>
+                <div class="details"></div>
+                <div class="text">14 available</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <i class="fa-solid fa-user-nurse"></i>
+              <div class="info">
+                <div class="details"></div>
                 <div class="text">14 available</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      
+      </div>      
        <!-- ------------appointment section------------- -->
 
       <section class="appoint">
@@ -157,6 +168,6 @@
     </div>
    
     
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
   </body>
 </html>
